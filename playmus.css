@@ -11,8 +11,8 @@ body {
   background-attachment: fixed;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   min-height: 100vh;
   font-family: "poppins", sans-serif;
   font-size: 0.8rem;
@@ -24,9 +24,11 @@ body {
   height: 100%;
   z-index: -1;
 }
-.container { position: absolute;
-  background-color: #99c39c;
-  width: 400px;
+.container { position: absolute; opacity: .5;
+  background-color: #a2d7f2;
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+  width: 480px;
   height: 160px;
   border-radius: 1rem;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -79,6 +81,7 @@ h2 {
   font-size: 44px;
 }
 
-#zaonpp{position: absolute; z-index: 3;}
-
+#zaonpp{position: absolute; z-index: 3;
+margin-left: 12rem; margin-top: 5rem;
+}
 p{color: #fff;}
