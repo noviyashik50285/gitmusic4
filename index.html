@@ -1,0 +1,177 @@
+<!-- <?php
+$counter = isset($_COOKIE['counter']) ? $_COOKIE['counter'] : 0;
+$counter++;
+setcookie("counter",$counter);
+
+$rand = isset($_COOKIE['ktopolz']) ? $_COOKIE['ktopolz'] : mt_rand(); 
+if (!isset($_COOKIE["ktopolz"])) setcookie("ktopolz", $rand);  
+$rand = "us_" . $rand;  
+
+$time = microtime(true);
+$localIP = getHostByName(getHostName());     
+$date = date ("d-m-Y H:i:s");    
+$data1 = $date . " - " . $rand . " n " . $counter . " - " . $localIP . "\r\n";
+$handler = fopen('vrema.txt', "a");
+fwrite($handler, $data1);
+fclose($handler);   
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="particles.css">
+    <link rel="stylesheet" href="all.min.css" /> -->
+    <link rel="stylesheet" href="playmus.css" />
+    <link rel="stylesheet" href="viezdmnu.css" />    
+    <link rel="stylesheet" href="viezdmnur.css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Аудиоплейер 4</title>
+    <link rel="icon" type="Images/x-icon" href="atsicon.ico"/>
+  </head>
+  <body>
+
+<div class="menu">
+  <div class="list_menu">
+    <ul>
+<li><span id=mus401><p>Здравствуйте</p>    
+    <audio controls>
+        <source src="music/zdravstvuyte.mp3" type="audio/mpeg">Прослушаем музыку 1
+    </audio>
+</span></li>
+
+<li><span id=mus402><p>Бродячие артисты</p>    
+  <audio controls>
+      <source src="music/artisti.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus412><p>Тайга</p>    
+  <audio controls>
+      <source src="music/tayga.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus406><p>Кручу педали</p>    
+  <audio controls>
+      <source src="music/krpedali.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus407><p>Планета эта</p>    
+  <audio controls>
+      <source src="music/planeta.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus408><p>Вечное движение</p>    
+  <audio controls>
+      <source src="music/dvizenie.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus410><p>Одесса</p>    
+  <audio controls>
+      <source src="music/sgorodom.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>  
+</span></li>
+
+<li><span id=mus413><p>Как тень</p>
+  <audio controls>
+      <source src="music/kakten.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+</ul>
+</div>
+</div>
+
+<div class="menur">
+  <div class="list_menur">
+    <ul>
+
+<li><span id=mus411><p>Снимается кино</p>    
+  <audio controls>
+      <source src="music/snkino.mp3" type="audio/mpeg">Прослушаем музыку 1
+    </audio>
+</span></li>
+
+<li><span id=mus409><p>Волшебники</p>    
+  <audio controls>
+      <source src="music/volshebniki.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+  
+<li><span id=mus414><p>Малиновка</p>    
+  <audio controls>
+      <source src="music/malinovka.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus404><p>Под музыку Вивальди</p>    
+  <audio controls>
+      <source src="music/vivaldi.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus403><p>Весеннее танго</p>    
+  <audio controls>
+      <source src="music/vestango.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus405><p>На далёкой Амазонке</p>    
+  <audio controls>
+      <source src="music/amazonka.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus415><p>Грузинская песня</p>    
+  <audio controls>
+      <source src="music/gruzinp.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+<li><span id=mus416><p>Вечная весна</p>    
+  <audio controls>
+      <source src="music/vechvesna.mp3" type="audio/mpeg">Прослушаем музыку 1
+  </audio>
+</span></li>
+
+</ul>
+  </div>
+     </div>
+
+<div id="zaonpp">ЗАО НПП "АТС"</div>     
+
+    <div class="container">
+      <!--============Player Content -->
+      <h2 id="music_title">Capital Letters</h2>
+      <!--==============Player Progress & Timmer -->
+      <div class="player_progress" id="player_progress">
+        <div class="progress" id="progress">
+          <div class="music_duration">
+            <span id="current_time">0:00</span>
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+      </div>
+      <!--==============Player Controllers -->
+      <div class="player_controls">
+        <i class="fa-solid fa-backward" title="Предыдущий" id="prev"></i>
+        <i class="fa-solid fa-play play-button" title="Запуск" id="play"></i>
+        <i class="fa-solid fa-forward" title="Следующий" id="next"></i>
+      </div>
+    </div>
+
+    <script defer src="playmus.js"></script>
+  <!-- <div id="particles-js"></div>
+	<script src="../particles.min.js"></script>
+  <script src="../app.js"></script>    
+  <script src="podskaz.js"></script> -->
+
+</body>
+</html>
+
