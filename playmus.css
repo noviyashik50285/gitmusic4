@@ -1,18 +1,41 @@
-* {  padding: 0;  margin: 0;
-  box-sizing: border-box;
+* {  padding: 0;  margin: 0;  box-sizing: border-box;
 }
-body { 
-  background-image: url(fon.jpg);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
+.butnfon{ display: flex; 
+  padding-left: 3rem; padding-top: 1.5rem;
+  font-size: medium; color: red; margin-left: -4rem;
+  justify-content: space-between;
+  align-items: flex-start;  /* align-items: start !important; */
+} 
+/* #butn0{ color: red; } */
+.victor{ 
+  display: block;
+  margin-top: 26rem;  /* opacity: 0.95; */
+  align-items: center;
+  position: absolute;
+}
+.victor1{ 
+  display: block;
+  margin-top: 4rem;   /* opacity: 0.95; */
+  align-items: center;
+  position: absolute;
+}
+button { background-color: transparent;
+    background-repeat: no-repeat;
+    border: 1; color: red;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+button:hover{color: white;}
+body {  background-image: url(back/niagara.jpg);
+  /* background: radial-gradient(rgb(55, 255, 0), blue); */
   min-height: 100vh;
   overflow: hidden;
+	background-size: cover;
   background-attachment: fixed;
-
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  background-position: center;
+  display: flex;  /* align-items: center; */
+  justify-content: center;
   min-height: 100vh;
   font-family: "poppins", sans-serif;
   font-size: 0.8rem;
@@ -24,14 +47,18 @@ body {
   height: 100%;
   z-index: -1;
 }
-.container { position: absolute; opacity: .5;
-  background-color: #a2d7f2;
-  margin-left: 35rem;
-  margin-top: 1.5rem;
-  width: 480px;
+.container {  
+  display: block;
+  margin-top: 10rem; color: white;
+  opacity: 0.85;
+  align-items: center;
+  position: absolute;
+  /* background-color: #99c39c; */
+  width: 400px;
   height: 160px;
+  border: 3px solid gray;
   border-radius: 1rem;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); */
 }
 h2 {
   font-size: 1.2rem;
@@ -61,7 +88,7 @@ h2 {
   position: absolute;
   top: -25px;
 }
-.player_controls {
+.player_controls { padding-left: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +109,6 @@ h2 {
 }
 
 #zaonpp{position: absolute; z-index: 3;
-margin-left: 12rem; margin-top: 5rem;
+padding-left: 9.5rem; padding-top: 5rem;
 }
 p{color: #fff;}
