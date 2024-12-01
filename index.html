@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
-      <link rel="stylesheet" href="playmus.css" />
-      <link rel="stylesheet" href="viezdmnu.css" />    
-      <link rel="stylesheet" href="viezdmnur.css" />    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="all.min.css"> -->
-    <title>Плейер 4 Ниагара</title>
-    <link rel="icon" type="Images/x-icon" href="atsicon.ico"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="spop.min.css" />
+  <link rel="stylesheet" href="playmus.css" />
+  <link rel="stylesheet" href="viezdmnu.css" />
+  <link rel="stylesheet" href="viezdmnur.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- <link rel="stylesheet" href="all.min.css"> -->
+<title>Плейер 4 Ниагара</title>
+<link rel="icon" type="Images/x-icon" href="atsicon.ico"/>
   </head>
   <body>
 
@@ -36,11 +37,11 @@
 
 <div class="containerop" id="containerop">
   <p>
-    Комплекс водопадов на реке Ниагаре, отделяющий американский штат Нью-Йорк от 
+Комплекс водопадов на реке Ниагаре, отделяющий американский штат Нью-Йорк от 
 канадской провинции Онтарио. Ниагарские водопады - это водопад «Подкова», 
 иногда ещё называемый «Канадским водопадом», «Американский водопад» и водопад «Фата». 
 Хотя перепад высот и не очень велик, водопады очень широки, и по объёму 
-проходящей через него воды Ниагарский водопад - самый мощный в Северной Америке.
+проходящей через него воды Ниагарский водопад — самый мощный в Северной Америке.
 Водопад был открыт французскими колонистами в XVII веке, однако ещё многие годы после 
 этого оставался почти неизвестным широкой публике. Первые поселения европейцев здесь 
 появились после объявления независимости США.
@@ -53,7 +54,9 @@
 </p>
 </div>
 
-<div class="victor1">
+<button id="otklvse" onclick="show_hide5()">&nbspВключить/Отключить меню&nbsp</button>
+
+<div class="victor1" id="victor1">
   <button onclick="show_hide()">&nbspОписание&nbsp</button>
   <button onclick="show_hide2()">&nbspПлейер&nbsp</button>
   <button onclick="show_hide3()">&nbspФоны&nbsp</button>
@@ -62,52 +65,52 @@
  
 <div class="menu">
   <div class="list_menu">
-    <ul>
-<li><span id=mus401><p>Здравствуйте</p>    
-    <audio controls>
-        <source src="music/zdravstvuyte.mp3" type="audio/mpeg">Прослушаем музыку 1
-    </audio>
+<ul>
+<li><span id=mus401><p>Здравствуйте</p>
+<audio controls>
+<source src="music/zdravstvuyte.mp3" type="audio/mpeg">Прослушаем музыку 1
+</audio>
 </span></li>
 
-<li><span id=mus402><p>Бродячие артисты</p>    
+<li><span id=mus402><p>Бродячие артисты</p>
   <audio controls>
-      <source src="music/artisti.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/artisti.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus412><p>Тайга</p>    
+<li><span id=mus412><p>Тайга</p>
   <audio controls>
-      <source src="music/tayga.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/tayga.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus406><p>Кручу педали</p>    
+<li><span id=mus406><p>Кручу педали</p>
   <audio controls>
-      <source src="music/krpedali.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/krpedali.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus407><p>Планета эта</p>    
+<li><span id=mus407><p>Планета эта</p>
   <audio controls>
-      <source src="music/planeta.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/planeta.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus408><p>Вечное движение</p>    
+<li><span id=mus408><p>Вечное движение</p>
   <audio controls>
-      <source src="music/dvizenie.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/dvizenie.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus410><p>Одесса</p>    
+<li><span id=mus410><p>Одесса</p>
   <audio controls>
-      <source src="music/sgorodom.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/sgorodom.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>  
 </span></li>
 
 <li><span id=mus413><p>Как тень</p>
   <audio controls>
-      <source src="music/kakten.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/kakten.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
@@ -117,53 +120,53 @@
 
 <div class="menur">
   <div class="list_menur">
-    <ul>
+<ul>
 
-<li><span id=mus411><p>Снимается кино</p>    
+<li><span id=mus411><p>Снимается кино</p>
   <audio controls>
-      <source src="music/snkino.mp3" type="audio/mpeg">Прослушаем музыку 1
-    </audio>
+  <source src="music/snkino.mp3" type="audio/mpeg">Прослушаем музыку 1
+</audio>
 </span></li>
 
-<li><span id=mus409><p>Волшебники</p>    
+<li><span id=mus409><p>Волшебники</p>
   <audio controls>
-      <source src="music/volshebniki.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/volshebniki.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
   
-<li><span id=mus414><p>Малиновка</p>    
+<li><span id=mus414><p>Малиновка</p>
   <audio controls>
-      <source src="music/malinovka.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/malinovka.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus404><p>Под музыку Вивальди</p>    
+<li><span id=mus404><p>Под музыку Вивальди</p>
   <audio controls>
-      <source src="music/vivaldi.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/vivaldi.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus403><p>Весеннее танго</p>    
+<li><span id=mus403><p>Весеннее танго</p>
   <audio controls>
-      <source src="music/vestango.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/vestango.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus405><p>На далёкой Амазонке</p>    
+<li><span id=mus405><p>На далёкой Амазонке</p>
   <audio controls>
-      <source src="music/amazonka.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/amazonka.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus415><p>Грузинская песня</p>    
+<li><span id=mus415><p>Грузинская песня</p>
   <audio controls>
-      <source src="music/gruzinp.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/gruzinp.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
-<li><span id=mus416><p>Вечная весна</p>    
+<li><span id=mus416><p>Вечная весна</p>
   <audio controls>
-      <source src="music/vechvesna.mp3" type="audio/mpeg">Прослушаем музыку 1
+  <source src="music/vechvesna.mp3" type="audio/mpeg">Прослушаем музыку 1
   </audio>
 </span></li>
 
@@ -171,26 +174,26 @@
 </div>
 </div>
 
-     <div class="container" id="container">
-      <div id="zaonpp">ЗАО НПП "АТС"</div>     
-      <!--============Player Content -->
-      <h2 id="music_title">Capital Letters</h2>
-      <!--==============Player Progress & Timmer -->
-      <div class="player_progress" id="player_progress">
-        <div class="progress" id="progress">
-          <div class="music_duration">
-            <span id="current_time">0:00</span>
-            <span id="duration">0:00</span>
-          </div>
-        </div>
-      </div>
-      <!--==============Player Controllers -->
-      <div class="player_controls">
-        <i class="fa-solid fa-backward" title="Предыдущий" id="prev"></i>
-        <i class="fa-solid fa-play play-button" title="Запуск" id="play"></i>
-        <i class="fa-solid fa-forward" title="Следующий" id="next"></i>
-      </div>
-    </div>
+ <div class="container" id="container">
+  <div id="zaonpp">ЗАО НПП "АТС"</div> 
+  <!--============Player Content -->
+  <h2 id="music_title">Capital Letters</h2>
+  <!--==============Player Progress & Timmer -->
+  <div class="player_progress" id="player_progress">
+<div class="progress" id="progress">
+  <div class="music_duration">
+<span id="current_time">0:00</span>
+<span id="duration">0:00</span>
+  </div>
+</div>
+  </div>
+  <!--==============Player Controllers -->
+  <div class="player_controls">
+<i class="fa-solid fa-backward" title="Предыдущий" id="prev"></i>
+<i class="fa-solid fa-play play-button" title="Запуск" id="play"></i>
+<i class="fa-solid fa-forward" title="Следующий" id="next"></i>
+  </div>
+</div>
 
   <script defer src="playmus.js"></script>
   <script src="backgr.js"></script>  
@@ -198,11 +201,39 @@
   <script src="vklvikl2.js"></script>  
   <script src="vklvikl3.js"></script>  
   <script src="vklvikl4.js"></script>  
+  <script src="vklvikl5.js"></script>  
+
+<script src="spop.min.js"></script>  
+
+<script>
+spop.defaults = {
+  template  : null, // string required. Without it nothing happens!
+  style : 'info',// success, warning or error
+  autoclose : 11000,// miliseconds
+  position  : 'top-right',// top-left top-center bottom-left bottom-center bottom-right
+  icon  : false,// or false
+  group : false,// string, add a id reference
+  onOpen: function() { },
+  onClose   : function() { }
+};
+spop('<h2 class="spop-title">При наведении курсора на верх экрана (рабочего окна) в середине появится кнопна для включения и отключения главного меню.</h2>');
+// spop('<h2 class="spop-title">При наведении курсора на левый верхний угол экрана появится кнопна для включения и отключения главного меню.</h2><p class="vnizuspan">Это окно само не закроется</p>');
+</script>
+
+<script>
+spop.defaults = {
+style : 'info',// success, warning or error
+autoclose : 5000,// miliseconds
+position  : 'top-left',// top-left top-center bottom-left bottom-center bottom-right
+icon  : false,// or false
+};
+spop('<h2 class="spop-title">На боковых панелях - дополнительное меню.</h2>');
+</script>
 
   <!-- <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous">
   </script> -->
   
 </body>
