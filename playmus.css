@@ -19,13 +19,6 @@ transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
   justify-content: space-between;
   align-items: flex-start;  /* align-items: start !important; */
 } 
-/* #butn0{ color: red; } */
-/* .victor{ 
-  display: block;
-  margin-top: 26rem;  
-  align-items: center;
-  position: absolute;
-} */
 .victor1{ 
   display: block;
   margin-top: 4rem;   /* opacity: 0.95; */
@@ -135,6 +128,6 @@ h2 {
 }
 
 #zaonpp{position: absolute; z-index: 3;
-padding-left: 12.2rem; padding-top: 5rem;
+padding-left: 12.4rem; padding-top: 5rem;
 }
 p{color: #fff;}
